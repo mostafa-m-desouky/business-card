@@ -1,13 +1,116 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+body {
+  background-color: #23252C;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 100px 0;
+}
+main {
+  background-color: #1A1B21;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 317px;
+}
+main .profile {
+  width: 100%;
+  height: 317px;
+  background-image: url("images/laura-smith.png");
+  background-size: cover;
+}
+main .information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+main .information h2 {
+  color: #ffff;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+main .information h3 {
+  color: #F3BF99;
+  text-transform: capitalize;
+}
+main .information span {
+  color: #fff;
+}
+main .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+main .btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #000;
+}
+main .btn button:last-of-type {
+  color: #fff;
+  background-color: #5093E2;
+}
+main .about,
+main .interests {
+  margin: 15px 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main .about h3,
+main .interests h3 {
+  color: #F5F5F5;
+}
+
+main .about p,
+main .interests p {
+  color: #DCDCDC;
+  font-weight: 300;
+  font-size: 12.5px;
+  line-height: 20px;
+}
+main footer {
+  height: 64px;
+  background-color: #161619;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+main footer ul li a i {
+  color: #918E9B;
+  font-size: 1.3rem;
 }
